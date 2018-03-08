@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
  <!-- Required meta tags always come first -->
  <meta charset="utf-8"> 
@@ -34,15 +34,18 @@
         </div>
 
     </nav>
-    <header class = "jumbotron">
+    <header class = "jumbotron" id = "top">
         <div class = "container">
             <div class = "row row-header">
-                <div class = "col-12 col-sm-8">
+                <div class = "col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class = "col col-sm align-self-center">
+                <div class = "col col-sm-3 align-self-center">
                     <img src="img/logo.png" class = "img-fluid">
+                </div>
+                <div class = "col-12 col-sm-3">
+                    <a type = "submit" class = "col-12 btn btn-warning btn-block btn-sm" href = "#form123">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -59,8 +62,7 @@
                         src="img/uthappizza.png" alt="uthappizza"
                     >
                     <div class ="media-body">
-                <h2 class = "media-heading">
-                    Uthappizza
+                <h2 class = "media-heading">Uthappizza
                     <span class = "badge badge-danger">HOT</span>
                     <span class = "badge badge-pill badge-default">$4.99</span>
                 </h2>
@@ -73,17 +75,20 @@
 
 
         <div class = "row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
+            <div class="col-sm-4 col-md-3 flex-first">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col-sm col-md flex-first">
+            <div class="col-sm col-md">
                 <div class = "media">
-                    <img class = "d-flex mr-3 img-thumbnail align-self-center"
-                       src = "img/buffet.png" alt = "buffet">
+                   
                     <div class= "media-body">
-                <h2 class = "mt-0">Weekend Grand Buffet</h2>
+                <h2 class = "mt-0">Weekend Grand Buffet
+                    <span class = "badge badge-danger">NEW</span>
+                </h2>
                 <p class = "hidden-xs-down">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
+                    <img class = "d-flex ml-3 img-thumbnail align-self-center"
+                    src = "img/buffet.png" alt = "buffet">
                 </div>
             </div>
         </div>
@@ -104,6 +109,54 @@
                 </div>
             </div>
         </div>
+        <div class = "row-content col-md-8 " id = "form123">
+                <div class = "card">
+                    <h3 class = "card-header card-warning text-white">Reserve a Table</h3>
+                       <div class = "card-block">
+                        <form class = "horizontal">
+                            <div class = "form-group row">
+                            <label for = "Number of Guests" class="col-sm-2 col-form-label">Number of Guests</label>
+                            <div class="radio col-md-10">
+                                    <label class="custom-control custom-rdio mr-1 mr-lg-4"><input name="guests" type="radio" value=""> 1 </label>
+                                    <label class="custom-control custom-rdio mr-1 mr-lg-4"><input name="guests" type="radio" value=""> 2 </label>
+                                    <label class="custom-control custom-rdio mr-1 mr-lg-4"><input name="guests" type="radio" value=""> 3 </label>
+                                    <label class="custom-control custom-rdio mr-1 mr-lg-4"><input name="guests" type="radio" value=""> 4 </label>
+                                    <label class="custom-control custom-rdio mr-1 mr-lg-4"><input name="guests" type="radio" value=""> 5 </label>
+                                    <label class="custom-control custom-rdio mr-1 mr-lg-4"><input name="guests" type="radio" value=""> 6 </label>
+                                </div>
+                            </div>
+                            <div class = "form-group row">
+                                <label for = "Date and Time" class = "col-md-2 col-form-label">Date and Time</label>
+                                    <div class = "col-4">
+                                        <div class = "input-group">
+                                            <div class = "input-group-addon">
+                                                <i class = "fa fa-calendar"></i>
+                                            </div>
+                                            <input type = "text" class = "form-control" id = "date" name = "date" placeholder="Date">
+                                        </div>
+                                    </div>
+                                    <div class = "col-4">
+                                        <div class = "input-group">
+                                            <div class = "input-group-addon">
+                                                <i class = "fa fa-clock-o"></i>
+                                            </div>
+                                            <input type = "text" class = "form-control" id = "time" name = "time" placeholder="Time">                                    </div>
+                                    </div>
+                                   
+                            </div>  
+                            <div class = "form-group row">
+                                    <div class = "offset-md-2 col-md-10">
+                                        <a type = "submit" class = "btn btn-primary" href = "#top">
+                                            Reserve   
+                                        </a>
+                                    </div>
+                                </div>                       
+                       </form>
+                       </div>
+                        
+                    </div>
+                </div>
+            </div>
     </div>
 
     <footer class="footer">
