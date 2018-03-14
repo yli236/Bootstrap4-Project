@@ -8,10 +8,12 @@
  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
  <!-- Bootstrap CSS -->
+ <!-- build:css css/main.css -->
  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">    
  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
  <link rel="stylesheet" href="css/Bootstrap-social.css">
  <link rel="stylesheet" href="CSS/styles.css">
+ <!-- endbuild -->
  <title>Ristorante Con Fusion</title>
 </head>
 
@@ -67,7 +69,7 @@
                                 </div>
                             </form>
                 </div>
-                <div class - "modal-footer">
+                <div class = "modal-footer">
                         <button style = "margin:15px"type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
                         <button type="submit" class="btn btn-primary btn-sm">Sign in</button>
                 </div>
@@ -318,28 +320,12 @@
         </div>
     </footer>
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <!-- build:js js/main.js -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/tether/dist/js/tether.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script>
-  $(document).ready(function(){
-      $("#mycarousel").carousel({interval: 2000});
-      $("#carousel-button").click(function(){
-          if($("#carousel-button").children("span").hasClass("fa-pause")){
-              $("#mycarousel").carousel('pause');
-              $("#carousel-button").children("span").removeClass("fa-pause");
-              $("#carousel-button").children("span").addClass("fa-play");
-
-          }else if($("#carousel-button").children("span").hasClass("fa-play")){
-              $("#mycarousel").carousel('cycle');
-              $("#carousel-button").children("span").removeClass("fa-play");
-              $("#carousel-button").children("span").addClass("fa-pause");
-
-          }
-      });
-  });
-  </script>
-
+  <script src="js/scripts.js"></script>
+  <!-- endbuild -->
 </body>
 
 </html>
